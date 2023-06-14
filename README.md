@@ -199,13 +199,13 @@ https://juno-engineer.com/article/laravel-dependency-injection/ より:
 
 コントローラー:
 
-![DC_2023061502](https://github.com/raymondyeung2022/LaravelCodingAdvice/assets/119655633/d84830fe-7b42-4312-a945-8e14ea959bf1)
+![DC_2023061501](https://github.com/raymondyeung2022/LaravelCodingAdvice/assets/119655633/5fc46a30-7a34-4d65-b163-ab2b2a7b2e7b)
 
 
 サービスクラス:
 
+![DC_2023061502](https://github.com/raymondyeung2022/LaravelCodingAdvice/assets/119655633/d84830fe-7b42-4312-a945-8e14ea959bf1)
 ![DC_2023061503](https://github.com/raymondyeung2022/LaravelCodingAdvice/assets/119655633/1341e16d-cbd1-41d6-93b2-23c73b2d79a6)
-![DC_2023061501](https://github.com/raymondyeung2022/LaravelCodingAdvice/assets/119655633/5fc46a30-7a34-4d65-b163-ab2b2a7b2e7b)
 
 14. 新規データ登録の時、eloquentのsave関数ではなく、create関数を利用しましょう。
 
