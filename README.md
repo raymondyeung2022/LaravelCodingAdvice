@@ -185,3 +185,34 @@ public function list($artist_condition)
     ■実行コマンド
     composer dump-autoload
     ```
+
+13. 依存性の注入(DI)を使いましょう。
+
+https://juno-engineer.com/article/laravel-dependency-injection/ より:
+
+<b>DIとは、「クラス内容で別のクラスを利用時、直接newせず外部から引数で渡してあげて利用」ということです。</b>
+
+一番利点としては、「未実装のクラスの代わりを作って、実装を進められる」ということで、チーム開発する時便利です。
+
+実装の方法は、コントローラークラスとサービスクラスで、コンストラクタを作ります。
+例:
+
+コントローラー:
+![DC_2023061503](https://github.com/raymondyeung2022/LaravelCodingAdvice/assets/119655633/1341e16d-cbd1-41d6-93b2-23c73b2d79a6)
+
+サービスクラス:
+![DC_2023061502](https://github.com/raymondyeung2022/LaravelCodingAdvice/assets/119655633/d84830fe-7b42-4312-a945-8e14ea959bf1)
+![DC_2023061501](https://github.com/raymondyeung2022/LaravelCodingAdvice/assets/119655633/5fc46a30-7a34-4d65-b163-ab2b2a7b2e7b)
+
+14. 新規データ登録の時、eloquentのsave関数ではなく、create関数を利用しましょう。
+
+理由:
+
+(1)「save()メソッドの後のインスタンスには、直前にデータに保存したコードのデータが格納される」ため、
+違う処理が行うと、別の新規データ登録できないかもしれないし、直前にデータに保存したコードのデータが上書き保存されてしまう可能性があります。
+
+(2) create()は複数データをまとめて登録できます。(主にSeederファイルで使います)
+
+(3) create()は保存してモデルクラスを返します。(例えばAPI開発に直接レスポンスとして返却でます)
+
+参考リンク: https://maasaablog.com/development/backend/php/laravel/897/#toc7
