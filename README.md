@@ -220,4 +220,4 @@ https://juno-engineer.com/article/laravel-dependency-injection/ より:
 
 (3) create()は保存してモデルクラスを返します。(例えばAPI開発に直接レスポンスとして返却でます)
 
-参考リンク: https://maasaablog.com/development/backend/php/laravel/897/#toc7
+参考リンク: https://maasaablog.com/blog/o8-w-ovcw3jg/
