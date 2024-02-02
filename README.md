@@ -207,6 +207,8 @@ https://juno-engineer.com/article/laravel-dependency-injection/ より:
 ![DC_2023061502](https://github.com/raymondyeung2022/LaravelCodingAdvice/assets/119655633/d84830fe-7b42-4312-a945-8e14ea959bf1)
 ![DC_2023061503](https://github.com/raymondyeung2022/LaravelCodingAdvice/assets/119655633/1341e16d-cbd1-41d6-93b2-23c73b2d79a6)
 
+別の参考リンク: https://qiita.com/hshimo/items/1136087e1c6e5c5b0d9f
+
 14. 新規データ登録の時、eloquentのsave関数ではなく、create関数を利用しましょう。
 
 理由:
